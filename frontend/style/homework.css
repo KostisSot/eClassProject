@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+
+.homework_main-layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.homework_content {
+    padding: 50px;
+    flex-grow: 1;
+}
+
+.homework_content h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.homework_intro {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 850px;
+}
+
+.homework_divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ddd, rgba(255,255,255,0));
+    margin: 40px 0;
+}
+
+
+.homework-item {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.homework-item h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.hw-section {
+    margin-bottom: 20px;
+}
+
+.hw-section h3 {
+    font-size: 1.1rem;
+    color: #2980b9;
+    margin-bottom: 8px;
+}
+
+.hw-section ul {
+    padding-left: 20px;
+}
+
+.hw-section ul li {
+    margin-bottom: 5px;
+}
+
+.hw-download {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #2c3e50;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.hw-download:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.hw-deadline {
+    background-color: #fdf2f2;
+    padding: 10px;
+    border-left: 4px solid #e74c3c;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+.hw-divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+
+
+/* Κουμπιά */
+.btn-add-hw {
+    background-color: #5b6978;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-add-hw:hover {
+    background-color: #219150;
+}
+
+.btn-delete {
+    color: #e74c3c;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-delete:hover {
+    text-decoration: underline;
+    color: #c0392b;
+}
+.btn-cancel {
+    background-color: #5b6978;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.btn-cancel:hover {
+    background-color: #af1717;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.modal-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    background-color: #5b6978;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #10a330;
+}
+
+/* --- MODAL STYLES --- */
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin-top: 15%;
+    }
+}
